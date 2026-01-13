@@ -19,7 +19,6 @@ public class YatraAutomationScript {
 		ChromeOptions chromeOptions = new ChromeOptions();
 		chromeOptions.addArguments("--disable-notifications");
 		
-		// Launch the browser
 		WebDriver driver = new ChromeDriver(chromeOptions);
 		driver.get("https://www.yatra.com/");
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
